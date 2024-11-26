@@ -1,4 +1,4 @@
-# Shell Script
+# Shell Script 작성법
 
 ---
 
