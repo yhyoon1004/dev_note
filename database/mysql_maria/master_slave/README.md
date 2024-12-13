@@ -117,7 +117,10 @@
     --슬레이브 동작 확인
     SHOW SLAVE STATUS                        
     ```
-
+- 상태 확인
+  `Slave_IIO_RUnning`, `Slave_SQL_Running`필드가 `yes`면 잘 동작중인 것! `구축완료` 
+![img_2.png](img_2.png)
+  
 ### 예외상황 대응
 - 슬레이브에서 마스터 정보 잘못 입력시
 ```sql
