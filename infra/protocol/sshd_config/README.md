@@ -1,5 +1,8 @@
-# Match option 목록
+# SSH 설정 법 
+> 1. Match option 목록
 
+---
+## 1. Match option 목록
 ```shell
  #vi ./sshd_conf
  
@@ -31,3 +34,5 @@
     - `AllowAgentForwarding` : ssh인증 에이전트 포워딩 허용여부
     - `MaxSessions` : 최대 동시 연결 세션 개수
     - `MaxAuthTries` : 인증 실패 시도 횟수 제한 개수
+
+---
