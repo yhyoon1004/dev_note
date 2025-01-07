@@ -1,9 +1,13 @@
 # NEXTJS의 CSR(클라이언트 사이드 렌더링) 방식
 
+---
+
 ## 동작원리
 - `초기 웹` : 서버에서 `완성된 html`과 `js`,`css`  전송
 - `REACT / NEXTJS CSR` : 서버에서 `빈 html`과 `js`파일과 `css`를 전송,  
     브라우저가 `빈 html`에 `js파일로 html문서를 렌더링`하여 보여줌
+---
+
 ## 페이지 이동시
 - `초기 웹` : 해당하는 html 문서를 작성하여 `js`,`css`와 함께 전송
 - `REACT / NEXTJS CSR` :  
