@@ -3,7 +3,7 @@
 > 1. `explain` 키워드
 > 2. 2가지 캐시
 > 3. `index` , `limit`, `where` 키워드
-
+> 4. `sql_no_cache` innoBuffer 캐시제거
 
 ## 1. `explain` 키워드
 쿼리를 실행하기 전, 해당 쿼리 실행 계획에 대해 보여주는 명령어  
