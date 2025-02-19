@@ -59,10 +59,10 @@
         server backend2.example.com;
     }
     ```
-  - 서버가 고장났을 경우 대체 패턴 : 메인으로 사용하는 서버가 고장일 때 대체할 서버에 `backup` 키워드를 추가 
-      ```text
-      upstream backend {
-          server backend1.example.com;
-              server backend2.example.com backup;
-          }
-    ```
+- 서버가 고장났을 경우 대체 패턴 : 메인으로 사용하는 서버가 고장일 때 대체할 서버에 `backup` 키워드를 추가 
+    ```text
+    upstream backend {
+        server backend1.example.com;
+            server backend2.example.com backup;
+        }
+  ```
