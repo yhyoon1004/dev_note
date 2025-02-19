@@ -1,10 +1,10 @@
 # NGINX 로드밸런싱하는 법
->1. nginx.conf 설정
+>1. `nginx.conf` 설정
 >2. load balancing 패턴 설정
 
 ---
 
-## 1. nginx.conf 설정
+## 1. `nginx.conf` 설정
 - http 블록에 `upstream <이름> { .. }` 형식으로 블록을 추가
 - 전달할 서버의 `네트워크 도메인` 혹은 `ip+포트` 들을 넣어줌  
 
@@ -59,10 +59,10 @@
         server backend2.example.com;
     }
     ```
-- 서버가 고장났을 경우 대체 패턴 : 메인으로 사용하는 서버가 고장일 때 대체할 서버에 `backup` 키워드를 추가 
-```text
-    upstream backend {
-        server backend1.example.com;
-        server backend2.example.com backup;
-    }
-```
+  - 서버가 고장났을 경우 대체 패턴 : 메인으로 사용하는 서버가 고장일 때 대체할 서버에 `backup` 키워드를 추가 
+      ```text
+      upstream backend {
+          server backend1.example.com;
+              server backend2.example.com backup;
+          }
+    ```
