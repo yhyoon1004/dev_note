@@ -119,3 +119,5 @@ JAVA는 멀티 스레드를 지원하는 언어라 동시성 이슈가 발생할
     - `thread2` ➡️ threadLocalUserService.username.remove();  
     `📦ThreadLocalUserService.username.thread2 = null`  
 
+> ⛔ `ThreadLocal`을 비우지 않으면 스레드풀에 있는 해당 스레드는  
+> 이전에 넣어져있던 `ThreadLocal` 값을 가지고 있기에 문제가 될 수 있으므로 반드시 비워줘야 한다.
