@@ -43,7 +43,7 @@ JAVA는 멀티 스레드를 지원하는 언어라 동시성 이슈가 발생할
 위  와 같은 REST에서 UserService 클래스는 @Component로 인해 싱글톤 객체이다.  
 그러므로 다른곳에서 UserService의 username에 접근가능한데  
 문제는 여기서 발생한다.
-동시에 '/member/join?name=kim','/member/join?name=sung' 순차적으로 요청이 왔을 때
+동시에 `/member/join?name=kim`, `/member/join?name=sung` 순차적으로 요청이 왔을 때
 자바의 멀티스레드 기능에 의해 thread1 ,thread2 가 작업을 각각 맡아 수행한다.  
 
 - 초기 : `📦UserService.username= null`  
